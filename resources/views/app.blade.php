@@ -47,42 +47,12 @@
 <body>
 <div class='loader'></div>
 <div id="main-container">
-    <div id="header">
-        <div style="padding: 10px;">
-            <h1 id="header-h1"><a href=""><span class="logo_crm">LWS</span><span class="logo_divider"> | </span><span class="logo_company">Web Scrapper</span></a></h1>
-            <div id="user-info">
-                <h1>Hello, Guest</h1>
-                <h2><a href="#">Log Out</a></h2>
-            </div>
-            <div id="user-info" style="margin-right: 10px;">
-                <h1>
-                    <a class="tooltip-left" title="" href="#">
-                        <span class="homeNotification">4</span>
-                        <i class="fa fa-ticket my-fa-padding-right my-fa-menu"></i>
-                    </a>
-                </h1>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
+    @extends('header')
     <div id="container">
         @extends('menu')
         <div id="block">
             <div id="main-block" class="fade">
                 <div class="dashboard_general">
-                    <div class="main-block-title">
-                        <div id="bread-crumps">
-                            <div style="height: 20px; line-height: 23px;">
-                                <a href="#" id="home_logo">Dashboard</a>
-                                »
-                                <a style="color: #767676;">Manage All Links</a>
-                            </div>
-                        </div>
-                        <div style="float: right; height: 20px; ">
-                            <a style="margin-left: 0;" title="Add URL" class="table-button" href="#"><i class="fa fa-plus"></i>&nbsp; Add URL</a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
                     @yield('content')
                 </div>
             </div>
@@ -90,28 +60,6 @@
         <div class="clear"></div>
     </div>
 </div>
-<div id="footer">
-    <p>Copyright &copy; 2009 - <?= date("Y"); ?> <a target="_blank" href="#">mamun0024</a></p>
-    <?php //echo basename($_SERVER['PHP_SELF']) ; ?>
-</div>
-
-<!-- Fade Notification Library - Start -->
-<script src="/_$assets/lib/fade_notification/toastr.min.js"></script>
-<link rel='stylesheet' type='text/css' href="/_$assets/lib/fade_notification/toastr.css">
-<!-- Fade Notification Library - End -->
-
-<!-- My JavacScript Code - Start -->
-<script src="/_$assets/_$js/myScript.js"></script>
-<!-- My JavacScript Code - End -->
-
-<!-- My Table Code - Start -->
-<link rel='stylesheet' type='text/css' href="/_$assets/lib/table/t_style.css">
-<script src="/_$assets/lib/table/jquery.tablesorter.js"></script>
-<!-- My Table Code - End -->
-
-<!-- custom tooltip jQuery plugin - Start -->
-<link rel='stylesheet' type='text/css' href="/_$assets/lib/tooltipster/tooltipster.css">
-<script src="/_$assets/lib/tooltipster/jquery.tooltipster.min.js"></script>
-<!-- custom tooltip jQuery plugin - End -->
+@extends('footer')
 </body>
 </html>

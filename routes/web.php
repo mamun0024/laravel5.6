@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'UrllinkController@view');
+Route::get('link/{id}', 'UrllinkdataController@view');
