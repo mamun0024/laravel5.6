@@ -66,14 +66,7 @@
         </div>
     </div>
     <div id="container">
-        <div id="nav-menu" class="content" style="display: block;">
-            <div class="globalSearchDiv">
-                <a id="globalSearchButton"><i class="fa fa-search my-fa-padding-right"></i> Click to Search</a>
-            </div>
-            <ul>
-                <li><a href="#"><i class="fa fa-link my-fa-padding-right my-fa-menu"></i> All Urls</a></li>
-            </ul>
-        </div>
+        @extends('menu')
         <div id="block">
             <div id="main-block" class="fade">
                 <div class="dashboard_general">
@@ -90,26 +83,7 @@
                         </div>
                         <div class="clear"></div>
                     </div>
-                    <div class="main-block-padding">
-                        <div class="pageModule" style="margin: 8px 0;">
-                            <table class="ticketInfo">
-                                <thead>
-                                <tr>
-                                    <th style="width: 30px;">S/N</th>
-                                    <th>Url Link</th>
-                                    <th style="width: 95px;">Activity </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td><p class="ticketInfo_b">1</p></td>
-                                    <td><p class="ticketInfo_b"><i class="fa fa-link my-fa-padding-right"></i>Url Name</td>
-                                    <td><a style="margin-left: 0;" class="table-button" href="#"><i class="fa fa-bar-chart"></i>&nbsp; All Data</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    @yield('content')
                 </div>
             </div>
         </div>
