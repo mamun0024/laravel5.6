@@ -1,0 +1,92 @@
+@font-face{
+    font-family: Roboto-Thin;
+    src: url('../_$fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Roboto-Thin-i;
+    src: url('../_$fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Roboto-Light;
+    src: url('../_$fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Roboto-Light-i;
+    src: url('../_$fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Roboto-Regular;
+    src: url('../_$fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Roboto-Medium;
+    src: url('../_$fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+
+/********************************** Myriad-Pro Font *************************************/
+@font-face{
+    font-family: Myriad-Pro-Bold;
+    src: url('../_$fonts/myriad-pro/MYRIADPRO-BOLD.OTF') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Myriad-Pro-Bold-Con;
+    src: url('../_$fonts/myriad-pro/MYRIADPRO-BOLDCOND.OTF') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Myriad-Pro-Bold-ConIT;
+    src: url('../_$fonts/myriad-pro/MYRIADPRO-BOLDCONDIT.OTF') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Myriad-Pro-Bold-IT;
+    src: url('../_$fonts/myriad-pro/MYRIADPRO-BOLDIT.OTF') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Myriad-Pro-Con;
+    src: url('../_$fonts/myriad-pro/MYRIADPRO-COND.OTF') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Myriad-Pro-ConIT;
+    src: url('../_$fonts/myriad-pro/MYRIADPRO-CONDIT.OTF') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Myriad-Pro-Regular;
+    src: url('../_$fonts/myriad-pro/MYRIADPRO-REGULAR.OTF') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Myriad-Pro-Semi-Bold;
+    src: url('../_$fonts/myriad-pro/MYRIADPRO-SEMIBOLD.OTF') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: Myriad-Pro-Semi-Bold-IT;
+    src: url('../_$fonts/myriad-pro/MYRIADPRO-SEMIBOLDIT.OTF') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}

@@ -1,0 +1,103 @@
+.smoke-base {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.smoke-base.smoke-visible {
+    opacity: 1;
+    visibility: visible;
+}
+.smokebg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.smoke-base .dialog {
+    position: absolute;
+}
+.dialog-prompt {
+    margin-top: 15px;
+    text-align: center;
+}
+.dialog-buttons {
+    margin: 15px 0 5px 0
+}
+.smoke {
+    font: 400 14px "Roboto",sans-serif;
+    text-align: center;
+    line-height: 150%;
+}
+.dialog-buttons button {
+    display: inline-block;
+    vertical-align: baseline;
+    cursor: pointer;
+    font: 500 13px "Roboto",sans-serif;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    margin: 0 10px 0 0;
+    line-height: 12px;
+    padding: 8px 10px;
+    border-radius: 2px;
+}
+.dialog-prompt input {
+    margin: 0;
+    outline: none;
+    font: 400 14px "Roboto",sans-serif;
+    border: 1px solid #aaa;
+    width: 75%;
+    display: inline-block;
+    background-color: transparent;
+    padding: 8px;
+}
+.smoke-base {
+    background: rgba(255, 255, 255, 0.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#ffffff);
+}
+.smoke-base .dialog {
+    top: 25%;
+    width: 40%;
+    left: 33%;
+}
+.smoke-base .dialog-inner {
+    text-align: left;
+    font: 400 14px "Roboto",sans-serif;
+    padding: 30px 42px;
+    color:#202020;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.333);
+}
+.smoke {
+    background-color: rgba(255,255,255,0.95);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#ffffff);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.dialog-buttons button {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#EFFED0,endColorstr=#CAE3B2);
+    color: #000;
+    background-color: #EFFED0;
+    background-image: -webkit-linear-gradient(to bottom, #EFFED0, #CAE3B2);
+    background-image: -o-linear-gradient(to bottom, #EFFED0, #CAE3B2);
+    background-image: -moz-linear-gradient(to bottom, #EFFED0, #CAE3B2);
+    background-image: linear-gradient(to bottom, #EFFED0, #CAE3B2);
+    border-bottom: 2px solid #1C9321;
+    border-right: 1px solid #1C9321;
+    border-left: 1px solid #1C9321;
+    border-top: 1px solid #1C9321;
+}
+button.cancel {
+    border-bottom: 2px solid #B3580B;
+    border-right: 1px solid #B3580B;
+    border-left: 1px solid #B3580B;
+    border-top: 1px solid #B3580B;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#444444,endColorstr=#444444);
+}
+.queue{
+    display:none;
+}
