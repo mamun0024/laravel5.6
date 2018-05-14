@@ -39,7 +39,7 @@
                 <tr>
                     <td><p class="ticketInfo_b">{{ $loop->iteration }}</p></td>
                     <td>{{ $liDe->pTitle }}</td>
-                    <td>{{ $liDe->pImg }}</td>
+                    <td><img style="width: 200px;" src="{{ $liDe->pImg }}"></td>
                     <td>{{ $liDe->pDesc }}</td>
                 </tr>
             @endforeach

@@ -16,8 +16,8 @@ class CreateUrllinkdatasTable extends Migration
         Schema::create('urllinkdatas', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('url_id');
-            $table->string('pTitle', 255);
-            $table->string('pImg', 255);
+            $table->text('pTitle');
+            $table->text('pImg');
             $table->text('pDesc');
             $table->timestamps();
         });

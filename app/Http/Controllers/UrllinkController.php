@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Urllink;
-use Illuminate\Http\Request;
+use App\Urllinkdata;
 use App\Http\Requests\StoreUrl;
+use Goutte;
 
 class UrllinkController extends Controller
 {
+    protected $url_id;
     /**
      * Display a listing of the resource.
      *
@@ -34,7 +36,25 @@ class UrllinkController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(StoreUrl $request){
-        Urllink::create($request->all());
+        $urlLink = Urllink::create(request(['urlTitle']));
+        $this->url_id = $urlLink->id;
+
+        $crawler = Goutte::request('GET', 'http://www.carstore.citroen.es/madrid-las-tablas-psa-retail?nbPage=2');
+        $nodeValues = $crawler->filter('article')->each(function ($node) {
+            $productUrl = "http://www.carstore.citroen.es".$node->attr('unveil-url');
+            $crawlerChild = Goutte::request('GET', $productUrl);
+            $pImg = $crawlerChild->filter('img')->attr('src');
+            $pName = $crawlerChild->filter('header h2.title')->text();
+            $pDesc = $crawlerChild->filter('header p.features')->text();
+
+            $input['url_id'] = $this->url_id;
+            $input['pImg']   = $pImg;
+            $input['pTitle'] = $pName;
+            $input['pDesc']  = $pDesc;
+
+            Urllinkdata::create($input);
+        });
+
         return redirect('/')->with('status', 'New URL Created!');
     }
 }

@@ -6,6 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Urllinkdata extends Model
 {
+    protected $fillable = [
+        'url_id',
+        'pTitle',
+        'pImg',
+        'pDesc'
+    ];
+
     /**
      * Display a listing of the Specific ID's.
      *
