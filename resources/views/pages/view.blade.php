@@ -6,7 +6,7 @@
  * Time: 12:55 AM
  */
 ?>
-@extends('app')
+@extends('layouts.app')
 @section('content')
 <div class="main-block-title">
     <div id="bread-crumps">

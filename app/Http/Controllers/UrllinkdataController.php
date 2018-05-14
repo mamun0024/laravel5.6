@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class UrllinkdataController extends Controller
 {
-    public function view($id){
+    public function index($id){
         $link = Urllink::findOrFail($id);
         $urlTitle = $link->urlTitle;
 

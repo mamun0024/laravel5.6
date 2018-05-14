@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class UrllinkController extends Controller
 {
-    public function view(){
+    public function index(){
         $allLinks = Urllink::all();
         return view('pages.view', compact('allLinks'));
     }

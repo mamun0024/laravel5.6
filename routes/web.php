@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/', 'UrllinkController@view');
-Route::get('link/{id}', 'UrllinkdataController@view');
+Route::get('/', 'UrllinkController@index');
+Route::get('link/{id}', 'UrllinkdataController@index');
