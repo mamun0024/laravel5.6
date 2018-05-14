@@ -17,7 +17,7 @@
         </div>
     </div>
     <div style="float: right; height: 20px; ">
-        <a style="margin-left: 0;" title="Add URL" class="table-button" href="#"><i class="fa fa-plus"></i>&nbsp; Add URL</a>
+        <a style="margin-left: 0;" title="Add URL" class="table-button" href="{{ url("url/create") }}"><i class="fa fa-plus"></i>&nbsp; Add URL</a>
     </div>
     <div class="clear"></div>
 </div>

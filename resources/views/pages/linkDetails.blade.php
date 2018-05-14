@@ -23,7 +23,7 @@
     <div class="clear"></div>
 </div>
 <div class="main-block-padding">
-    <h1>URL Link : {{ $urlTitle }}</h1>
+    <h1 class="linkName">URL Link : {{ $urlTitle }}</h1>
     <div class="pageModule" style="margin: 8px 0;">
         <table class="ticketInfo">
             <thead>

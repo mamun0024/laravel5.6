@@ -12,4 +12,7 @@
 */
 
 Route::get('/', 'UrllinkController@index');
-Route::get('link/{id}', 'UrllinkdataController@index');
+Route::get('/url/create', 'UrllinkController@create');
+Route::post('/url', 'UrllinkController@store');
+
+Route::get('/link/{id}', 'UrllinkdataController@index');

@@ -1967,3 +1967,16 @@ input[type="checkbox"]:checked + label .box_check {
 a:focus{
     outline: none;
 }
+.linkName{
+    font: 600 14px/18px "Roboto",sans-serif;
+    color: #5a5a5a;
+    padding: 15px 0 12px 0;
+}
+.invalid-feedback strong{
+    font: 500 14px/18px "Roboto",sans-serif;
+    color: #d44f4f;
+    padding: 7px;
+    border: 1px solid red;
+    display: block;
+    background: #f9e9e9;
+}
