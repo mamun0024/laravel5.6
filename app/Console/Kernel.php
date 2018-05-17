@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        //This is the line of code added, at the end, we the have class name of DeleteInActiveUsers.php inside app\console\commands
+        '\App\Console\Commands\CarstoreCitroenScrapper',
     ];
 
     /**
@@ -24,8 +25,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+        //insert name and signature of you command and define the time of excusion
+        $schedule->command('CarstoreCitroenScrapper:uploaddata')
+            ->everyMinute();
     }
 
     /**
